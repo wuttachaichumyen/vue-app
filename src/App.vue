@@ -1,17 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { useRouter } from 'vue-router'
+import HelloWorld from './components/HelloWorld.vue';
+import IT2021 from './pages/IT021.vue';
+import IT2022 from './pages/IT022.vue';
+import IT2023 from './pages/IT023.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+ <router-view />
 </template>
 
 <style scoped>
